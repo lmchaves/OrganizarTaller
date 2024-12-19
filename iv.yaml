@@ -1,2 +1,6 @@
 lenguaje: Python
 entidad: src/sede.py
+
+automatizar:
+  fichero: Makefile
+  orden: make check
