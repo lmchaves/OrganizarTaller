@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'Dockerfile'
+      - 'Makefile'
 
 jobs:
   build_publish:
