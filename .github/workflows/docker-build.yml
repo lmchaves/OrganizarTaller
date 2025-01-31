@@ -1,5 +1,4 @@
 name: Docker Image
-
 on:
   push:
     paths:
