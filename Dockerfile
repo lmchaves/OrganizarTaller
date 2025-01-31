@@ -25,4 +25,4 @@ RUN wget -qO- https://astral.sh/uv/install.sh | sh
 ENV UV_CACHE_DIR=/home/userTest/.cache/uv
 ENV UV_PROJECT_ENVIRONMENT=/home/userTest/.venv
 
-CMD ["make", "test"]
+ENTRYPOINT ["make", "test"]
