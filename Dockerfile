@@ -16,9 +16,6 @@ RUN mkdir -p /home/userTest/.cache && \
     chmod -R a+w /home/userTest/.venv 
 
 ENV PATH="/home/userTest/.local/bin:$PATH"
-ENV PIPX_BIN_DIR="/home/userTest/.local/bin"
-ENV PIPX_HOME="/home/userTest/.local/pipx"
-
 
 RUN wget -qO- https://astral.sh/uv/install.sh | sh
 
