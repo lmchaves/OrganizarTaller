@@ -28,6 +28,8 @@ Ya que estoy utilizando python, tenemos que ver esta opción en la que ya nos vi
 
 Hay varias opciones para elegir una imagen base para el proyecto. Las imágenes como Ubuntu, Debian o Alpine solo incluyen el sistema operativo, y todas están activamente mantenidas. Alpine destaca por ser la más ligera, pudiendo instalar Python y sus dependencias adicionales.
 
-Debido a esto, me decantaré por la imagen oficial de Python sobre Alpine, ya que proporciona un mantenimiento activo y la inclusión de Python sin necesidad de instalaciones adicionales.
+Entre las opciones de python, la mejor es la que incluye alpine ya que es la menos pesada, pero tien el inconveniente de que no sabemos que versión de python estamos instalando, y si es la que necesitamos para nuestro proyecto
+
+Por lo que he decidido utilizar alpine y luego instalar Python manualmente para asegurarme de que se instala la versión correcta y mantener una imagen ligera.
 
 El peso de las imágenes finales estan [aquí](https://github.com/lmchaves/OrganizarTaller/tree/Objetivo-1/docs/imgs/peso_imagenes.png).
