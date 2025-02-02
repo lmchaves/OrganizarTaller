@@ -22,14 +22,12 @@ La última actualización fue de hace unos días, siendo una herramieta activa y
 ## [Python](https://hub.docker.com/_/python)
 Ya que estoy utilizando python, tenemos que ver esta opción en la que ya nos viene instalado python, pero hay diversas opciones, de las ya comentadas anteriormente como Alpine(muy ligera) peso final **85MB**, debian:bookworm-slim con peso final **163MB**, python:bullseye-slim con un peso final de **161MB**. Con la última acutalzición de días, por lo que esta mantenida.
 
-## [frostming/pdm](https://hub.docker.com/r/frostming/pdm)
 
-Esta es la imagen de frostming creador de pdm, la cual utiliza Debian slim como base, la cual tiene instalado tanto Python como PDM y pesa 80MB. Pero el principal problema es que su última actualización fue hace 3 años.
 
 ## Conlusión
 
-Hay varias opciones para elegir una imagen base para el proyecto. Las imágenes como Ubuntu, Debian o Alpine solo incluyen el sistema operativo, y todas están activamente mantenidas. Alpine destaca por ser la más ligera, pero presenta el inconveniente de que debemos instalar Python y sus dependencias adicionales, lo que puede aumentar el tamaño final.
+Hay varias opciones para elegir una imagen base para el proyecto. Las imágenes como Ubuntu, Debian o Alpine solo incluyen el sistema operativo, y todas están activamente mantenidas. Alpine destaca por ser la más ligera, pudiendo instalar Python y sus dependencias adicionales.
 
-Dentro de las imágenes que ya incluyen Python, tenemos opciones como la imagen frostming/pdm, que viene con PDM preinstalado. Sin embargo, esta imagen no está activamente mantenida, ya que no ha recibido actualizaciones en los últimos tres años. Debido a esto, me decantaré por la imagen oficial de Python sobre Alpine, ya que proporciona un mantenimiento activo y la inclusión de Python sin necesidad de instalaciones adicionales.
+Debido a esto, me decantaré por la imagen oficial de Python sobre Alpine, ya que proporciona un mantenimiento activo y la inclusión de Python sin necesidad de instalaciones adicionales.
 
 El peso de las imágenes finales estan [aquí](https://github.com/lmchaves/OrganizarTaller/tree/Objetivo-1/docs/imgs/peso_imagenes.png).
