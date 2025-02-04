@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM python:alpine
 
 RUN apk add --no-cache \
-    make \
+    make 
 
 
 RUN adduser -D -h /home/pruebatest pruebatest
