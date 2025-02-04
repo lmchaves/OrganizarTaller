@@ -4,7 +4,6 @@ RUN apk add --no-cache \
     make \
     python3.11
 
-WORKDIR /app/test
 
 RUN adduser -D -h /home/pruebatest pruebatest
 
@@ -22,5 +21,7 @@ RUN wget -qO- https://astral.sh/uv/install.sh | sh
 
 ENV UV_CACHE_DIR=/home/pruebatest/.cache/uv
 ENV UV_PROJECT_ENVIRONMENT=/home/pruebatest/.venv
+
+WORKDIR /app/test
 
 ENTRYPOINT ["make", "test"]
