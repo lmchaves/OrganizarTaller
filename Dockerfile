@@ -2,8 +2,7 @@ FROM alpine:latest
 
 RUN apk add --no-cache \
     make \
-    python3 \
-    py3-pip
+    python3
 
 WORKDIR /app/test
 
@@ -13,7 +12,7 @@ USER userTest
 
 
 RUN mkdir -p /home/userTest/.cache && \
-    chmod -R a+w /home/userTest/.cache && \
+    chmod -R a+w /home/userTest/.cache
 
 
 ENV PATH="/home/userTest/.local/bin:$PATH"
