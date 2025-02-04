@@ -7,7 +7,7 @@ Para seleccionar la imagen de docker mas adecuada para este proyecto, se han con
 
 1. **Imágenes mantenidas:** Preferencia por herramientas activamente mantenidas y actualizadas para evitar problemas de tecnologías obsoletas.
 
-2. Tambien se va a tener en cuenta el peso final de las imágenes(con todas las herramientas necesarias).
+2. Tambien se va a tener en cuenta el peso final de las imágenes,con todas las herramientas necesarias (como instalar python en las imágenes que no lo tienen).
 
 
 ## [Ubuntu](https://hub.docker.com/_/ubuntu)
