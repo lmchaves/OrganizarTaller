@@ -3,7 +3,6 @@ on:
   push:
     paths:
       - 'Dockerfile'
-      - 'Makefile'
 jobs:
   build_publish:
     name: Build and Push Docker Image
