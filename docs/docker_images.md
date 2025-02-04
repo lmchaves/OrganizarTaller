@@ -32,8 +32,8 @@ Ya que estoy utilizando python, tenemos que ver esta opción en la que ya nos vi
 
 Hay varias opciones para elegir una imagen base para el proyecto. Las imágenes como Ubuntu, Debian o Alpine solo incluyen el sistema operativo, y todas están activamente mantenidas. Alpine destaca por ser la más ligera, necesitando  instalar Python y sus dependencias adicionales.
 
-Entre las opciones de python, la mejor es la que incluye alpine ya que es la menos pesada con respecto a las de Debian.
+Entre las opciones de python, la mejor es la que incluye alpine ya que es la menos pesada con respecto a las de Debian, sin embargo el hecho de que tenga tan poco peso hace que tengas que instalar mas dependecias.
 
-Por lo que he decidido utilizar python:alpine ya que es la menos pesada, nos garantiza tener la última versión de python y solamente tendría que instalar make y uv.
+Por lo que he decidido utilizar python:bullseye-slim ya que hay un equilibrio entre que no sea muy pesada y que tenga dependencias necesarias, nos garantiza tener la última versión de python y solamente tendría que instalar make y uv.
 
 El peso de las imágenes finales estan [aquí](https://github.com/lmchaves/OrganizarTaller/tree/Objetivo-1/docs/imgs/peso_imagenes.png).
