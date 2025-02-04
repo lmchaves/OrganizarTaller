@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk add --no-cache \
     make \
-    python3
+    python3.11
 
 WORKDIR /app/test
 
