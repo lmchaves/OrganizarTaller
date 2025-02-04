@@ -6,21 +6,21 @@ RUN apk add --no-cache \
 
 WORKDIR /app/test
 
-RUN adduser -D -h /home/userTest userTest
+RUN adduser -D -h /home/pruebatest pruebatest
 
-USER userTest
+USER pruebatest
 
 
-RUN mkdir -p /home/userTest/.cache && \
-    chmod -R a+w /home/userTest/.cache && \
-    mkdir -p /home/userTest/.venv && \
-    chmod -R a+w /home/userTest/.venv 
+RUN mkdir -p /home/pruebatest/.cache && \
+    chmod -R a+w /home/pruebatest/.cache && \
+    mkdir -p /home/pruebatest/.venv && \
+    chmod -R a+w /home/pruebatest/.venv 
 
-ENV PATH="/home/userTest/.local/bin:$PATH"
+ENV PATH="/home/pruebatest/.local/bin:$PATH"
 
 RUN wget -qO- https://astral.sh/uv/install.sh | sh
 
-ENV UV_CACHE_DIR=/home/userTest/.cache/uv
-ENV UV_PROJECT_ENVIRONMENT=/home/userTest/.venv
+ENV UV_CACHE_DIR=/home/pruebatest/.cache/uv
+ENV UV_PROJECT_ENVIRONMENT=/home/pruebatest/.venv
 
 ENTRYPOINT ["make", "test"]
