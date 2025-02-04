@@ -1,4 +1,4 @@
-# Imagenes para el contenedor
+# Imágenes para el contenedor
 
 ## Criterios de evaluación
 
@@ -11,16 +11,16 @@ Para seleccionar la imagen de docker mas adecuada para este proyecto, se han con
 
 
 ## [Ubuntu](https://hub.docker.com/_/ubuntu)
-Está activamente mantenida con actualizaciones y versiones recientes, es una buena eleción para tener el sistema como base y ya ir añdiendo las herramientas necesarias. Pero tiene un peso final de **543MB**.
+Está activamente mantenida con actualizaciones y versiones recientes, es una buena elección para tener el sistema como base y ya ir añdiendo las herramientas necesarias. Pero tiene un peso final de **543MB**.
 
 ## [Debian](https://hub.docker.com/_/debian)
 La última actualización fue de hace un par de semanas, por lo que esta activamente mantenido. En cuanto al peso varia dependiendo de la version que escojas, tenemos la base con un peso muy parecido a ubuntu, pero luego tenemos varias opciones slim: debian:bullseye-slim con un peso de **460MB**, debian:bookworm-slim con peso **568MB** y debian normal **656MB**.
 
 ## [Alpine](https://hub.docker.com/_/alpine)
-La última actualización fue de hace unos días, siendo una herramieta activa y mantenida, con un peso mucho menor al de las anteriores, de tan solo 5MB de imagen base, sin funcionalides extra siendo mínima y eficiente. Pero con las herramientas,tiene un peso final de **114MB**.
+La última actualización fue de hace unos días, siendo una herramienta activa y mantenida, con un peso mucho menor al de las anteriores, de tan solo 5MB de imagen base, sin funcionalides extra siendo mínima y eficiente. Pero con las herramientas,tiene un peso final de **114MB**.
 
 ## [Python](https://hub.docker.com/_/python)
-Ya que estoy utilizando python, tenemos que ver esta opción en la que ya nos viene instalado python, pero hay diversas opciones, de las ya comentadas anteriormente como Alpine(muy ligera) peso final **85MB**, debian:bookworm-slim con peso final **163MB**, python:bullseye-slim con un peso final de **161MB**. Con la última acutalzición de días, por lo que esta mantenida.
+Ya que estoy utilizando python, tenemos que ver esta opción en la que ya nos viene instalado python, pero hay diversas opciones, de las ya comentadas anteriormente como Alpine(muy ligera) peso final **85MB**, debian:bookworm-slim con peso final **163MB**, python:bullseye-slim con un peso final de **161MB**. Con la última actualización  de días, por lo que esta mantenida.
 
 
 
@@ -28,7 +28,7 @@ Ya que estoy utilizando python, tenemos que ver esta opción en la que ya nos vi
 
 Hay varias opciones para elegir una imagen base para el proyecto. Las imágenes como Ubuntu, Debian o Alpine solo incluyen el sistema operativo, y todas están activamente mantenidas. Alpine destaca por ser la más ligera, pudiendo instalar Python y sus dependencias adicionales.
 
-Entre las opciones de python, la mejor es la que incluye alpine ya que es la menos pesada, pero tien el inconveniente de que no sabemos que versión de python estamos instalando, y si es la que necesitamos para nuestro proyecto
+Entre las opciones de python, la mejor es la que incluye alpine ya que es la menos pesada, pero tiene el inconveniente de que no sabemos que versión de python estamos instalando, y si es la que necesitamos para nuestro proyecto
 
 Por lo que he decidido utilizar alpine y luego instalar Python manualmente para asegurarme de que se instala la versión correcta y mantener una imagen ligera.
 
