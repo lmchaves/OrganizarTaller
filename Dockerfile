@@ -1,10 +1,10 @@
-FROM python:alpine
+FROM python:slim-bullseye
 
-RUN apk add --no-cache \
-    make 
+RUN apt-get update && apt-get install -y \
+    make \
+    wget 
 
-
-RUN adduser -D -h /home/pruebatest pruebatest
+RUN useradd -m -d /home/pruebatest pruebatest
 
 USER pruebatest
 
