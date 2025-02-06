@@ -23,8 +23,20 @@ Para poder realizar los test:
 make test
 
 
-
 Y ejecuta make help para ver todas las opciones.
+
+## Imagen base para docker
+La documentación sobre la imagen escogida esta en [imagen docker](./docs/docker_images.md)
+
+Para realizar la ejecución del tests:
+
+docker run -u 1001 -t -v $(pwd):/app/test lmchaveslop/organizartaller   
+
+Si queremos ejecurtarlo en local:
+
+docker build -t prueba-local .
+
+docker run -u 1001 -t -v $(pwd):/app/test prueba-local
 
 ## Documentación adicional
 - [Historias de usuario](./docs/user-stories.md)
@@ -32,5 +44,7 @@ Y ejecuta make help para ver todas las opciones.
 - [Milestones](./docs/milestones.md)
 - [Gestor Dependecias](./docs/gestor_dependencias.md)
 - [Gestor Tareas](./docs/gestor_tareas.md) 
+- [Imagen docker](./docs/docker_images.md)
+
 
 
